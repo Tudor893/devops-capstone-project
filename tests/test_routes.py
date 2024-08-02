@@ -14,13 +14,16 @@ from service.models import db, Account, init_db
 from service.routes import app
 from service import talisman
 
+
 DATABASE_URI = os.getenv(
     "DATABASE_URI", "postgresql://postgres:postgres@localhost:5432/postgres"
 )
 
+
 HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
 
 BASE_URL = "/accounts"
+
 
 ######################################################################
 #  T E S T   C A S E S
